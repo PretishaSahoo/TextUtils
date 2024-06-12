@@ -5,7 +5,7 @@ export default function About(props) {
   return (
     <>
     <div>
-        <div className="container p-5" style={{ marginBottom:'100px',backgroundColor:props.mode==='light'? 'white' :'black',color:props.mode==='light'? 'black' :'white', animation:"float 5s ease-in-out"}}>
+        <div className="container p-5" style={{ marginBottom:'100px',marginTop:"100px",backgroundColor:props.mode==='light'? 'white' :'black',color:props.mode==='light'? 'black' :'white', animation:"float 5s ease-in-out"}}>
        
        <h3 className="primary-color">About TextUtils</h3>
         <div>
