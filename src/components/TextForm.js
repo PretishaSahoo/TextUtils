@@ -46,18 +46,18 @@ export default function TextForm(props) {
     <>
     
     <div className="my-5 container">
-    <h1 style={{color:props.mode==='light'? 'black' :'white' }}>{props.heading}</h1>
+    <h1 className="primary-color">{props.heading}</h1>
     <textarea className="form-control mt-3" value={text}  onChange={handleOnChange} style={{backgroundColor:props.mode==='light'? 'white' :'black' , color:props.mode==='light'? 'black' :'white' }} id="myBox" rows="12"></textarea>
     </div>
     <div className="container">
-    <button disabled={text.length===0} className="btn btn-light mt-3 mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
-    <button disabled={text.length===0} className="btn btn-light mt-3 mx-1 my-1" onClick={handleLowClick}>Convert to Lowercase</button>
-    <button disabled={text.length===0} className="btn btn-light mt-3 mx-1 my-1" onClick={handleClearClick}>Clear Text</button>
-    <button disabled={text.length===0} className="btn btn-light mt-3 mx-1 my-1" onClick={handleCopyClick}>Copy Text</button>
-    <button disabled={text.length===0} className="btn btn-light mt-3 mx-1 my-1" onClick={handleCapitalizeClick}>Capitalize Text</button>
+    <button disabled={text.length===0} className="btn btn-light primary-color mt-3 mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+    <button disabled={text.length===0} className="btn btn-light primary-color mt-3 mx-1 my-1" onClick={handleLowClick}>Convert to Lowercase</button>
+    <button disabled={text.length===0} className="btn btn-light primary-color mt-3 mx-1 my-1" onClick={handleClearClick}>Clear Text</button>
+    <button disabled={text.length===0} className="btn btn-light primary-color mt-3 mx-1 my-1" onClick={handleCopyClick}>Copy Text</button>
+    <button disabled={text.length===0} className="btn btn-light primary-color mt-3 mx-1 my-1" onClick={handleCapitalizeClick}>Capitalize Text</button>
     </div>
     <div className="container my-3">
-      <h1 style={{color:props.mode==='light'? 'black' :'white' }}>Your Text Summary</h1>
+      <h1 className="primary-color">Your Text Summary</h1>
       <p style={{color:props.mode==='light'? 'black' :'white' }}>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words , {text.length} Characters</p>
       <p style={{color:props.mode==='light'? 'black' :'white' }}>{0.008*text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes required to Read the Text!</p>
     </div>
