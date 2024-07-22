@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 import About from './components/About';
+import ChatAI from './components/chatAI';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
 
           <Routes>
             <Route exact path="/about" element={<About mode={mode} />}></Route>
+            <Route exact path="/chatAI" element={<ChatAI mode={mode} />}></Route>
             <Route exact path="/" element={ <TextForm showAlert={showAlert} heading="Enter Text to analyze " mode={mode}/>}></Route> 
           </Routes>
        

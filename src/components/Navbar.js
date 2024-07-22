@@ -19,6 +19,9 @@ export default function Navbar(props) {
         <li className="nav-item">
           <Link className="nav-link active secondary-color" to="/about">About</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link active secondary-color" to="/chatAi">Chat with AI</Link>
+        </li>
       </ul>
       <div className="form-check form-switch mx-2">
       <input className="form-check-input mt-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode}/>
